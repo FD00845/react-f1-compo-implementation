@@ -1,0 +1,239 @@
+[
+    {
+        "key": "name",
+        "id": "name",
+        "icon": "user",
+        "label": "Name",
+        "validators": [
+            {
+                "name": "required",
+                "value": true
+            },
+            {
+                "name": "minLength",
+                "value": 2
+            }
+            ,
+            {
+                "name": "maxLength",
+                "value": 10,
+                "validationMessage": "Maximum 10 digits allowed."
+            }
+        ]
+    },
+    {
+        "key": "email",
+        "icon": "envelope",
+        "label": "Email",
+        "validators": [
+            {
+                "name": "required",
+                "value": true
+            },
+            {
+                "name": "minLength",
+                "value": 5
+            },
+            {
+                "name": "isEmail",
+                "value": true
+            }
+        ]
+    },
+    {
+        "key": "age",
+        "label": "Age",
+        "type": "number",
+        "id": "age"
+    },
+    {
+        "key": "rating",
+        "label": "Rating",
+        "type": "number",
+        "props": {
+            "min": 0,
+            "max": 5
+        }
+    },
+    {
+        "key": "gender",
+        "label": "Gender",
+        "type": "radio",
+        "options": [
+            {
+                "key": "male",
+                "label": "Male",
+                "name": "gender",
+                "value": "male",
+                "id": "male"
+            },
+            {
+                "key": "female",
+                "label": "Female",
+                "name": "gender",
+                "value": "female",
+                "id": "female"
+            }
+        ],
+        "validators": [
+            {
+                "name": "required",
+                "value": true
+            }
+        ]
+    },
+    {
+        "key": "Designation",
+        "label": "Designation"
+    },
+    {
+        "key": "city",
+        "label": "City",
+        "type": "select",
+        "value": "New York",
+        "id": "city",
+        "options": [
+            {
+                "key": "Select",
+                "label": "Select City",
+                "value": ""
+            },
+            {
+                "key": "Chicago",
+                "label": "Chicago",
+                "value": "Chicago"
+            },
+            {
+                "key": "Dellas",
+                "label": "Dellas",
+                "value": "Dellas"
+            },
+            {
+                "key": "NewYork",
+                "label": "New York",
+                "value": "New York"
+            }
+        ],
+        "validators": [
+            {
+                "name": "required",
+                "value": true
+            }
+        ]
+    },
+    {
+        "key": "skills",
+        "label": "Skills",
+        "type": "checkbox",
+        "options": [
+            {
+                "key": "Management Resource",
+                "label": "Management Resource",
+                "value": "Management_Resource",
+                "id": "Management_Resource"
+            },
+            {
+                "key": "Maintain Project Status",
+                "label": "Maintain Project Status",
+                "value": "Maintain Project Status",
+                "id": "project_status"
+            },
+            {
+                "key": "Report Generation",
+                "label": "Report Generation",
+                "value": "Report Generation",
+                "id": "report_generation"
+            }
+        ],
+        "validators": [
+            {
+                "name": "required",
+                "value": true
+            }
+        ]
+    },
+    {
+        "key": "Password",
+        "label": "Password",
+        "type": "Password",
+        "validators": [
+            {
+                "name": "required",
+                "value": true
+            }
+        ]
+    },
+    {
+        "key": "ConfirmPassword",
+        "label": "Confirm Password",
+        "type": "Password",
+        "validators": [
+            {
+                "name": "required",
+                "value": true
+            },
+            {
+                "name": "matchFields",
+                "value": "Password"
+            }
+        ]
+    },
+    {
+        "key": "Date",
+        "label": "Date",
+        "type": "date"
+    },
+    {
+        "key": "phone",
+        "label": "phone",
+        "type": "tel",
+        "placeholder": "123-45-678",
+        "required": true
+    },
+    {
+        "value": "New User ? Register here",
+        "type": "link",
+        "href": "http://localhost:3000/"
+    },
+    {
+        "key": "address",
+        "label": "Address",
+        "type": "textarea",
+        "rows": "5",
+        "validators": [
+            {
+                "name": "required",
+                "value": true
+            }
+        ]
+    },
+    {
+        "key": "file",
+        "label": "Files",
+        "type": "file",
+        "componentType": "DRAG_DROP_BROWSE",
+        "acceptFileTypes": [
+            "image/jpeg",
+            "image/png"
+        ],
+        "dropTitle": "Drag and drop or Browse",
+        "maxFileSize": 1000000,
+        "validators": [
+            {
+                "name": "required",
+                "value": true
+            }
+        ]
+    },
+    {
+        "key": "country",
+        "label": "Country",
+        "type": "autocomplete", 
+        "validators": [
+            {
+                "name": "required",
+                "value": true
+            }
+        ]
+    }
+]

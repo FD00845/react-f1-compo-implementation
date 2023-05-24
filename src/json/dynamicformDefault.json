@@ -1,0 +1,54 @@
+[
+    {
+        "key": "FirstName",
+        "label": "FirstName",
+        "validators": [
+            {
+                "name": "required",
+                "value": true
+            }
+        ]
+    },
+    {
+        "key": "LastName",
+        "label": "LastName",
+        "validators": [
+            {
+                "name": "required",
+                "value": true
+            }
+        ]
+    },
+    {
+        "key": "UserName",
+        "label": "UserName",
+        "validators": [
+            {
+                "name": "required",
+                "value": true
+            }
+        ]
+    },
+    {
+        "key": "Password",
+        "label": "Password",
+        "type": "Password",
+        "validators": [
+            {
+                "name": "required",
+                "value": true
+            }
+        ]
+    },
+    {
+        "key": "ConfirmPassword",
+        "label": "Confirm Password",
+        "type": "Password",
+        "validators": [
+            {
+                "name": "required",
+                "value": true
+            }
+        ]
+    }
+  ]
